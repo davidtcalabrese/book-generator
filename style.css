@@ -1,0 +1,206 @@
+:root {
+  --logo-green: #07e41a;
+  --logo-yellow: #fefe00;
+  --logo-blue: #0000e4;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-image: url(book-ladder.jpg);
+  background-size: cover;
+  background-position: 90%, 50%, 85%, 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+h1 {
+  font-size: 66pt;
+  color: rgb(250, 7, 230);
+  position: relative;
+  top: -200px;
+  margin: 5px;
+}
+
+.output {
+  font-size: 38pt;
+  color: var(--logo-yellow);
+}
+
+
+button{
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgb(207, 207, 207);
+}
+
+button:hover{
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 8px #f9f8fc;
+  } 
+
+#foot{
+  position: relative;
+  top: -83px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px #d9d4e7;
+  width: 200px;
+  height: 65px;
+  background-color: #2d2a38;
+  animation-duration: 5s;
+}
+
+.button-os{
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #f9f8fc;
+    border: 2.5px solid #0e172c;
+    transition: background-color 2.2s;
+    transition-duration: 3s;
+    transition: 1.5s;
+}
+  
+.button-os:hover{
+    position: absolute;
+    top: 30px;
+    background-color: #fec7d7;
+}
+  
+.button-os a{
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color:#0e172c;
+    transition: 1.5s;
+}
+  
+.button-os a:hover{
+    letter-spacing: 5px;
+}
+
+/*------------------------------- footer styles --------------------------------
+------------------------------------------------------------------------------*/
+footer {
+  background: #f0ecec;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  border-top: 2px solid var(--logo-yellow);
+}
+footer .credits {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  margin: 1.2em 0 0.5em 0;
+  font-size: 1.5rem;
+}
+footer img {
+  width: 60px;
+  margin-left: 15px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+address {
+  display: inline;
+}
+
+address a {
+  text-decoration: none;
+  color: var(--logo-green);
+  margin-bottom: 2em;
+  font-size: 1.5rem;
+}
+
+address a:hover {
+  color: var(--logo-yellow);
+  background-color: #000;
+  border-radius: 5px;
+}
+
+address a:active {
+  color: var(--logo-green);
+}
+
+.social {
+  position: absolute;
+  bottom: 45px;
+  right: 10px;
+}
+
+.social a {
+  color: #f7f6f6;
+}
+.social i {
+  color: var(--logo-blue);
+  margin: 0 10px;
+}
+
+.social i:hover {
+  color: var(--logo-green);
+}
+
+.social i:active {
+  color: var(--logo-yellow);
+}
+/*------------------------------- media queries --------------------------------
+------------------------------------------------------------------------------*/
+@media screen and (max-width: 900px) {
+    h1 {
+      font-size: 88px;
+      margin: 5px;
+    }
+    .output {
+      font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+  footer {
+    margin: 0;
+    bottom: 0;
+    height: 190px;
+  }
+  .social {
+    position: static;
+    top: 10px;
+    padding-bottom: 10px;
+  }
+  .logo {
+    margin: 0;
+  }
+  .social i {
+    margin: 10px 10px;
+  }
+}
