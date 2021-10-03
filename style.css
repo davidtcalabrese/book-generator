@@ -1,7 +1,7 @@
 :root {
-  --logo-green: #07e41a;
-  --logo-yellow: #fefe00;
-  --logo-blue: #0000e4;
+  --logo-red: #dd0100;
+  --logo-yellow: #a38300;
+  --logo-blue: #225095;
 }
 
 * { 
@@ -37,8 +37,9 @@ h1 {
 }
 
 .output {
+  background: #000;
   font-size: 42px;
-  color: var(--logo-yellow);
+  color: var(--logo-red);
   position: relative;
   bottom: -100px;
   width: 100%;
@@ -46,6 +47,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
 }
 
 
@@ -152,7 +154,7 @@ address {
 
 address a {
   text-decoration: none;
-  color: var(--logo-green);
+  color: var(--logo-red);
   margin-bottom: 2em;
   font-size: 1.5rem;
 }
@@ -164,7 +166,7 @@ address a:hover {
 }
 
 address a:active {
-  color: var(--logo-green);
+  color: var(--logo-red);
 }
 
 .social {
@@ -182,7 +184,7 @@ address a:active {
 }
 
 .social i:hover {
-  color: var(--logo-green);
+  color: var(--logo-red);
 }
 
 .social i:active {
